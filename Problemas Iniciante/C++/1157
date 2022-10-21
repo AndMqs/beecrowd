@@ -1,0 +1,16 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+  int a, cont = 1;
+  cin >> a;
+  
+  while (cont <= a){
+    if (a % cont == 0){
+      cout << cont << endl;
+    }
+    cont++;
+  }
+    return 0;
+}
