@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main(){
+  
+  double a, soma = 0, qtd = 0;
+  cin >> a;
+  
+  while (a >= 0){
+    soma = soma + a; //podemos usar o soma+=a tbm
+    qtd++;
+    cin >> a;
+  }
+  double media = soma/qtd;
+  cout << setprecision(2) << fixed << media << endl;
+    return 0;
+}
