@@ -1,0 +1,25 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+ 
+int main() {
+  int a; 
+  int gasolina = 0; 
+  int diesel = 0; 
+  int alcool = 0;
+  cin>>a;
+  while (a!=4) {
+    if(a == 1)
+        alcool++;
+    else if(a == 2)
+        gasolina++;
+    else if(a == 3)
+        diesel++;
+        cin>>a;
+    }
+    cout <<"MUITO OBRIGADO"<<endl;
+    cout << "Alcool: " << alcool << endl;
+    cout << "Gasolina: " << gasolina << endl;
+    cout <<"Diesel: " << diesel << endl;
+    return 0;
+}
