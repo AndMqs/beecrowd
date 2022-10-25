@@ -1,0 +1,53 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int C; 
+    int qtde=0,c100=0, c50=0, c25=0, c10=0,c5=0,c1=0;
+    //declarei as variaveis de forma que conseguisse guardar valor nelas, todas começanco do 0
+    cin>>C;
+    
+    //a logica do programa foi a seguinte:
+    
+    if(C>=100){ //se o valor for maior ou igual a 100 - um real, ele entra nessa possibilidade
+        c100=C/100; //a qtd de moedas de um real é igual ao total de moedas dividido por 100 centavos
+        C=C-(c100*100); //agora eu atribuo um novo valor para o meu total de moedas após passar pela caixinha
+        qtde=qtde+c100; // e acrescento a quantidade de moedas do determinado valor a minha caixa de qtd de moedas geral
+    }
+    if(C>=50){ 
+        c50=C/50; 
+        C=C-(c50*50); 
+        qtde=qtde+c50;
+    }
+    if(C>=25){
+        c25=C/25;
+        C=C-(c25*25);
+        qtde=qtde+c25;
+    }
+    if(C>=10){
+        c10=C/10;
+        C=C-(c10*10);
+        qtde=qtde+c10;
+    }
+     if(C>=5){
+        c5=C/5;
+        C=C-(c5*5);
+        qtde=qtde+c5;
+    }
+    if(C>=1){
+        c1=C/1;
+        qtde=qtde+c1;
+    }
+    cout<<qtde<<endl;
+    cout<<c100<<endl;
+    cout<<c50<<endl;
+    cout<<c25<<endl;
+    cout<<c10<<endl;
+    cout<<c5<<endl;
+    cout<<c1<<endl;
+    
+    return 0;
+}
+
